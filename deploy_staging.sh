@@ -16,5 +16,6 @@ cp assets/favicon.ico dist/
 gsutil -m cp -R gs://${BUCKET}/${IMAGE_TRAINER_DIR}/\* dist/image_trainer/
 gsutil -m cp -R gs://${BUCKET}/${SOUND_TRAINER_DIR}/\* dist/sound_trainer/
 
+cp firebase-production.json firebase.json
 firebase deploy --only hosting:ai-for-edu-staging
-
+rm firebase.json

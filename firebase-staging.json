@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "ai-for-edu-staging",
+    "public": "dist",
+    "ignore": [
+      "firebase*.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
